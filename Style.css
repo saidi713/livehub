@@ -1,0 +1,28 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#0b1020;color:#fff}
+header{height:70px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:#11182d;border-bottom:1px solid #26304d;position:sticky;top:0;z-index:10}
+.logo{font-size:24px;font-weight:800}
+.logo span{color:#ff3158}
+nav a{color:#ddd;text-decoration:none;margin-left:24px}
+.hero{min-height:560px;padding:80px 7%;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;background:linear-gradient(135deg,#11182d,#0b1020)}
+.badge{color:#ff3158;font-weight:bold}
+.hero h1{font-size:clamp(45px,7vw,76px);line-height:1.02;margin:15px 0}
+.hero h1 span{color:#ff3158}
+.intro{font-size:18px;color:#b9c0d0;max-width:550px;line-height:1.6}
+.button,button{display:inline-block;margin-top:20px;background:#ff3158;color:#fff;border:0;border-radius:8px;padding:14px 24px;text-decoration:none;font-weight:bold;cursor:pointer}
+.hero-card{height:320px;border-radius:18px;background:linear-gradient(145deg,#202a48,#131a31);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 20px 50px #0006}
+.play{width:80px;height:80px;border-radius:50%;background:#ff3158;display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:15px}
+.section{padding:70px 7%}
+.section h2{font-size:34px}
+.stream-card{max-width:850px;background:#151e36;border:1px solid #273250;border-radius:14px;overflow:hidden}
+.stream-screen{height:330px;background:linear-gradient(135deg,#171d31,#080b14);display:flex;align-items:center;justify-content:center}
+.stream-screen span{background:#ff3158;padding:8px 14px;border-radius:5px;font-weight:bold}
+.stream-info{padding:24px}
+.stream-info p,.about p{color:#aeb6c8;line-height:1.6}
+.about{background:#11182d}
+footer{text-align:center;padding:30px;color:#8790a6;border-top:1px solid #26304d}
+@media(max-width:700px){
+.hero{grid-template-columns:1fr;padding-top:55px}
+.hero-card{height:230px}
+nav a{margin-left:10px;font-size:14px}
+}
